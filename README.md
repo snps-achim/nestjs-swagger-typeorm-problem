@@ -1,7 +1,7 @@
 
 ## Problem
 
-When using latest "@nestjs/swagger": "7.2.0" and  "@nestjs/typeorm": "10.0.1", then the  NestJS application start is failing during bootstrap with "Error: A circular dependency has been detected (property key: "level"). Please, make sure that each side of a bidirectional relationships are using lazy resolvers". 
+When using latest "@nestjs/swagger": "7.2.0" and  "@nestjs/typeorm": "10.0.1", then the  NestJS application start is failing during bootstrap with "Error: A circular dependency has been detected (property key: "someKey"). Please, make sure that each side of a bidirectional relationships are using lazy resolvers". 
  
 ### Root cause
  `"reflect-metadata": "^0.1.13"` is required for `@nestjs\swagger` to work. 
